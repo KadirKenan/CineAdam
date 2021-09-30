@@ -23,7 +23,6 @@ namespace DataAccess.Context
         public DbSet<Session> Sessions{ get; set; }
         public DbSet<Week> Weeks{ get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        public DbSet<AppUser> AppUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

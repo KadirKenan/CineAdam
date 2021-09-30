@@ -31,6 +31,8 @@ namespace WebUI
         
         public void ConfigureServices(IServiceCollection services)
         {
+            //Repository baðýmlýlýklarý burada dahil edilecek. services.AddTransient<IGenreRepository,GenreRepository>();
+
             services.AddDbContext<MovieContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("WebUI")));
             services.AddIdentity<AppUser, IdentityRole>(x =>
             {
@@ -80,14 +82,20 @@ namespace WebUI
             //});
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+
                 endpoints.MapControllerRoute(
             name: "areas",
             pattern: "{area:exists}/{Controller=Home}/{Action=Index}/{id?}"
+        );
+                endpoints.MapControllerRoute(
+            name: "account",
+            pattern: "{Controller=Account}/{Action=Profile}/{Name}"
         );
                 endpoints.MapControllerRoute(
                     name: "default",

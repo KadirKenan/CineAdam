@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "PendingAccount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    DataAccess.Entity.AppUser registerUser = ViewBag.User as DataAccess.Entity.AppUser;
+}
+
+<div class="text-center">
+    <h2>Merhaba @registerUser.UserName</h2>
+    <p>
+        Lütfen <strong>@registerUser.Email</strong> adresine gönderilen "Hesap Aktivasyon" maili içerisinde bulunan linki tıklayarak hesabınızı aktif hale getirin.
+    </p>
+</div>
+

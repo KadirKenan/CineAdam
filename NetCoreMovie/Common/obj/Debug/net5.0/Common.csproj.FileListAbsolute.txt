@@ -10,15 +10,21 @@ D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMov
 D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\obj\Debug\net5.0\Common.dll
 D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\obj\Debug\net5.0\ref\Common.dll
 D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\obj\Debug\net5.0\Common.pdb
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\bin\Debug\net5.0\Common.deps.json
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\bin\Debug\net5.0\Common.dll
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\bin\Debug\net5.0\ref\Common.dll
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\bin\Debug\net5.0\Common.pdb
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.dll
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\ref\Common.dll
-C:\Users\kadir\Desktop\CineAdam\NetCoreMovie\Common\obj\Debug\net5.0\Common.pdb
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\Common.deps.json
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\Common.dll
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\ref\Common.dll
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\Common.pdb
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.dll
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\ref\Common.dll
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.pdb
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\Common.runtimeconfig.json
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\bin\Debug\net5.0\Common.runtimeconfig.dev.json
+C:\Users\abdulkadir.gul\Desktop\NetCoreMovieTheather\NetCoreMovie\Common\obj\Debug\net5.0\Common.genruntimeconfig.cache
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\bin\Debug\net5.0\Common.runtimeconfig.json
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\bin\Debug\net5.0\Common.runtimeconfig.dev.json
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Common\obj\Debug\net5.0\Common.genruntimeconfig.cache

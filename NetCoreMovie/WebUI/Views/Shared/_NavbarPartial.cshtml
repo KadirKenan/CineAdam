@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<DataAccess.Entity.AppUser> SignInManager
+
+<ul class="navbar-nav float-right">
+    @{ if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user mr-2"></i> @User.Identity.Name
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        
+                        <a asp-action="Profile" asp-controller="Account" asp-route-id="@User.Identity.Name" class="dropdown-item" >Hesabım</a>
+                        <a asp-action="Reservation" asp-controller="Account" asp-route-id="@User.Identity.Name" class="dropdown-item" >Rezervasyon</a>
+                        <a asp-action="LogOut" asp-controller="Account" asp-route-id="@User.Identity.Name" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt text-danger"></i>
+                            Çıkış Yap
+                        </a>
+                    </div>
+                </div>
+            </li>
+ }
+        else
+        {
+            <li class="nav-item">
+                <a asp-action="Register" asp-controller="Home" class="nav-link text-dark">
+                    <i class="fa fa-user mr-2"></i>
+                    Kayıt
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-action="Login" asp-controller="Home" class="nav-link text-dark"><i class="fa fa-lock mr-2"></i>Giriş</a>
+            </li>
+        }
+    }
+
+
+
+
+</ul>

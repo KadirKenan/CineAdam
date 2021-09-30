@@ -1,4 +1,6 @@
-﻿using DataAccess.Entity;
+﻿using Common;
+using DataAccess.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,15 +14,19 @@ using WebUI.Models.ViewModels;
 
 namespace WebUI.Controllers
 {
+   
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
         private readonly UserManager<AppUser> userManager;
         private readonly SignInManager<AppUser> signInManager;
-        public HomeController(UserManager<AppUser> _usermanager, SignInManager<AppUser> _signInManager)
+
+        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager)
         {
-            userManager = _usermanager;
+            _logger = logger;
+            userManager = _userManager;
             signInManager = _signInManager;
-        }     
+        }
 
         public IActionResult Index()
         {
@@ -42,25 +48,24 @@ namespace WebUI.Controllers
         {
             return View();
         }
-        ////////////////////////////////////////////////////////////////////////////
 
-      
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM)
         {
+            //Kayıt işlemi
             if (ModelState.IsValid)
             {
-
-                AppUser newUser = new AppUser()
-                {
-                    UserName = registerVM.UserName,
-                    Email = registerVM.Email
-                };
+                AppUser newUser = new AppUser();
+                newUser.UserName = registerVM.UserName;
+                newUser.Email = registerVM.Email;
 
                 var result = await userManager.CreateAsync(newUser, registerVM.Password);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index");
+                    string mailMessage = $"Merhaba {newUser.UserName}!\nüye olduğunuz için teşekkür ederiz. Lütfen aşağıda gönderilen linki tıklayarak hesabınızı aktif hale getirin.\nhttps://localhost:31685/Home/Activation/{newUser.ActivationCode}";
+                    MailSender.SendEmail(registerVM.Email, "Hesap Aktivasyon", mailMessage);
+
+                    return RedirectToAction("PendingAccount", newUser);
                 }
                 else
                 {
@@ -70,17 +75,49 @@ namespace WebUI.Controllers
                     }
                 }
 
-
+            }
+            else
+            {
+                return View();
             }
             return View();
+        }
+
+        public IActionResult PendingAccount(AppUser user)
+        {
+            ViewBag.User = user;
+            return View();
+        }
+
+        public async Task<IActionResult> Activation(Guid id)
+        {
+
+            if (userManager.Users.Any(x => x.ActivationCode == id))
+            {
+                AppUser user = userManager.Users.Where(x => x.ActivationCode == id).FirstOrDefault();
+                user.EmailConfirmed = true;
+                var result = await userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                    TempData["success"] = "Hesabınız aktifleştirildi";
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+            else
+            {
+                return View();
+            }
+
         }
 
         public IActionResult Login()
         {
             return View();
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM)
@@ -93,26 +130,24 @@ namespace WebUI.Controllers
                     var result = await signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
                     if (result.Succeeded)
                     {
-                        return View("Index");
+                        TempData["success"] = $"Hoşgeldin {user.UserName}";
+                        return RedirectToAction("Index");
                     }
                     else
                     {
-                        ModelState.AddModelError("failedLogin", "Şifre Hatalı!");
+                        ModelState.AddModelError("failedLogin", "şifre hatalı!");
                         return View();
                     }
-
                 }
                 else
                 {
-                    ModelState.AddModelError("notFound", "Böyle Bir Kullanıcı Bulunamadı!");
-                    return View();
+                    ModelState.AddModelError("notFound", "böyle bir kullanıcı bulunamadı!");
                 }
             }
-            else
-                return View();
+            return View();
         }
-
-
-
     }
+
 }
+
+

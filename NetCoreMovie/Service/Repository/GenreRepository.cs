@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Service.Repository
+{
+    public class GenreRepository
+    {
+        //IGenreRepository içerisinde tanımlı olan metotlar buraya implement edilecek ve metotların gövdeleri doldurulacak.
+    }
+}

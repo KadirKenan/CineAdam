@@ -27,16 +27,22 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav float-right">
-                        <li class="nav-item">
-                            <a asp-action="Register" asp-controller="Home" class="nav-link text-dark">Kayıt</a>
-                        </li>
-                    </ul>
+                    <partial name="_NavbarPartial"/>
+                    
                 </div>
             </div>
         </nav>
     </header>
     <div class="container">
+        @{
+        if (TempData["success"] != null)
+            {
+                <div class="alert alert-success text-center" id="alert">
+                    <span>@TempData["success"]</span>
+                </div>
+                
+            }
+        }
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -50,6 +56,11 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $(document).ready(function () {
+            $("#alert").fadeOut(3000);
+        })
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

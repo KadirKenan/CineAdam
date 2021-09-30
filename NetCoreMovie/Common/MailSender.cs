@@ -26,6 +26,10 @@ namespace Common
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
 
+            //Not!!!!!!!!!!!!!!!!
+            //Eğer tanımlı gmail hesabınız üzerinden mail göndermek isterseniz aşağıdaki linki tıklayarak izin işlemini aktif etmeniz gerekmektedir.
+            //https://www.google.com/settings/security/lesssecureapps
+
             smtp.Send(sender);
         }
     }
