@@ -1,0 +1,38 @@
+﻿@model DataAccess.Entity.Genre
+
+@{
+    ViewBag.Title = "-GÜNCELLEME-";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+}
+<div class="row">
+    <div class="col-lg-6">
+        <section class="panel">
+            <header class="panel-heading">
+                @Model.GenreName Tür  @ViewBag.Title paneli
+            </header> <br />
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Tür Adı</label>
+                        <div class="col-lg-10">
+                            @Html.TextBoxFor(x => x.GenreName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Durum</label>
+                        <div class="col-lg-10">
+                            @Html.CheckBoxFor(x => x.IsActive, new { @class = "form-control", type = "checkbox" })
+                            <h5 class="col-lg-2">AKTİF</h5>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <button type="submit" class="btn btn-danger">Kaydet</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </section>
+</div>
+</div>

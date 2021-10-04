@@ -2401,6 +2401,19 @@
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
         }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
       }
     }
   },
@@ -7962,6 +7975,11 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7972,7 +7990,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8012,6 +8031,9 @@
             },
             "C:\\Users\\kadir\\Desktop\\CineAdam\\NetCoreMovie\\DataAccess\\DataAccess.csproj": {
               "projectPath": "C:\\Users\\kadir\\Desktop\\CineAdam\\NetCoreMovie\\DataAccess\\DataAccess.csproj"
+            },
+            "C:\\Users\\kadir\\Desktop\\CineAdam\\NetCoreMovie\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\kadir\\Desktop\\CineAdam\\NetCoreMovie\\Service\\Service.csproj"
             }
           }
         }

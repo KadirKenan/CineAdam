@@ -1,0 +1,30 @@
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.deps.json
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.dll
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\ref\Service.dll
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.pdb
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\DataAccess.dll
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\DataAccess.pdb
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.dll
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\ref\Service.dll
+D:\Yazılım\Github\Bilge Adam Akademi\YMS3148\12-NetCoreMovieTheater\NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.pdb
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.dll
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\ref\Service.dll
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.pdb
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.deps.json
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.dll
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\ref\Service.dll
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\Service.pdb
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\DataAccess.dll
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\kadir\Desktop\12-NetCoreMovieTheater\NetCoreMovie\Service\obj\Debug\net5.0\Service.csproj.CopyComplete

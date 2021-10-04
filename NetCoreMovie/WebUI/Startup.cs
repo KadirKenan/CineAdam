@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using Service.IRepository;
+using Service.Repository;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -54,6 +56,10 @@ namespace WebUI
                 x.SlidingExpiration = true;
                 x.ExpireTimeSpan = TimeSpan.FromMinutes(1);
             });
+
+
+            //services.AddTransient<IGenreRepository, GenreRepository>();
+            services.AddTransient<IMovieRepository, MovieRepository>();
             services.AddControllersWithViews();
 
             services.AddControllersWithViews();

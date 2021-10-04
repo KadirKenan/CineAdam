@@ -1,0 +1,50 @@
+﻿@model DataAccess.Entity.Movie 
+
+@{ 
+    ViewBag.Title = "Film Ekle";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+   
+}
+<div class="row">
+    <div class="col-lg-6">
+        <section class="panel">
+            <header class="panel-heading">
+                <h4>@ViewBag.Title</h4>
+            </header> <br />
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" method="post">
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Film Adı</label>
+                        <div class="col-lg-10">
+                            <input name="MovieName" type="text" class="form-control" placeholder="film adı">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Açıklama</label>
+                        <div class="col-lg-10">
+                            <input name="Description" type="text" class="form-control" placeholder="açıklama">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Tür</label>
+                        <div class="col-lg-10">
+                            <input name="MovieGenres" type="text" class="form-control" placeholder="tür">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Süre</label>
+                        <div class="col-lg-10">
+                            <input name="Duration" type="time" class="form-control" placeholder="süre">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <button type="submit" class="btn btn-danger">Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>

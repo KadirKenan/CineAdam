@@ -1,0 +1,67 @@
+﻿
+@model List<DataAccess.Entity.Movie>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2>FİLMLER</h2>
+            </div>
+            <div class="col-lg-3">
+                @Html.ActionLink("Film Ekle", "Add", "Movie", null, new { @class = "btn btn-sm btn-success float-right" })
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FilmAdı</th>
+                        <th>İçerik</th>
+                        <th>Süre</th>
+                        <th>Tür</th>
+                        <th>Durum</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var movie in Model)
+                    {
+                    <tr>
+                        <td>@movie.Id</td>
+                        <td>@movie.MovieName</td>
+                        <td>@movie.Description</td>
+                        <td>@movie.Duration</td>
+                        <td>@movie.MovieGenres</td>
+                        <td>
+                            @{
+                                if (movie.IsActive)
+                                {
+                                    <span class="badge badge-success">Aktif</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">Pasif</span>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <form asp-action="Delete" method="post">
+                                <button class="btn btn-success btn-xs"><i class="icon-ok">Bilgi</i></button>
+                                <a href="/Admin/Movie/Update/@movie.Id" class="btn btn-primary btn-xs">Güncelle<i class="icon-pencil"></i></a>
+                                <a href="/Admin/Movie/Delete/@movie.Id" class="btn btn-danger btn-xs">Sil<i class="icon-trash "></i></a>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

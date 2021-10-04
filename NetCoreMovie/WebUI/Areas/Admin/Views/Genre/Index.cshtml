@@ -1,0 +1,51 @@
+﻿@model List<DataAccess.Entity.Genre>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2>Türler</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tür</th>
+                    <th>Durum</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var genre in Model)
+                {
+                    <tr>
+                        <td>@genre.Id</td>
+                        <td>@genre.GenreName</td>
+                        <td>
+                            @{
+                                if (genre.IsActive)
+                                {
+                                    <span class="badge badge-success">Aktif</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">Pasif</span>
+                                }
+                            }
+                        </td>
+                        <td>
+                            <form asp-action="Delete" method="post">
+                                <button class="btn btn-success btn-xs"><i class="icon-ok">Bilgi</i></button>
+                                <a href="/Admin/Genre/Update/@genre.Id" class="btn btn-primary btn-xs">Güncelle<i class="icon-pencil"></i></a>
+                                <a href="/Admin/Genre/Delete/@genre.Id" class="btn btn-danger btn-xs">Sil<i class="icon-trash "></i></a>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
